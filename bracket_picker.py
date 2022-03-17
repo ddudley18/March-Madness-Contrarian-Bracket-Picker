@@ -140,7 +140,6 @@ for tRound in predChancesDict:
             differential = round(pickRate - chances, 2)
         except:
             team = getAltName(team)
-            print(team)
             pickRate = pickRateDict[tRound].get(team)
             differential = round(pickRate - chances, 2)
         differentialsDict[tRound][team] = differential
