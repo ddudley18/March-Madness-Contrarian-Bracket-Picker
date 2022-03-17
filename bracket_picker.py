@@ -113,8 +113,8 @@ def getAltName(team):
         return "S Dakota St"
     elif team == "Jacksonville State":
         return "J'Ville St"
-    elif team == "Rutgers" or team == "Notre Dame":
-        return "RUTG/ND"
+    elif team == "Rutgers":
+        return "Notre Dame"
     elif team =="New Mexico State":
         return "New Mexico St"
     elif team =="CS Fullerton":
@@ -140,6 +140,7 @@ for tRound in predChancesDict:
             differential = round(pickRate - chances, 2)
         except:
             team = getAltName(team)
+            print(team)
             pickRate = pickRateDict[tRound].get(team)
             differential = round(pickRate - chances, 2)
         differentialsDict[tRound][team] = differential

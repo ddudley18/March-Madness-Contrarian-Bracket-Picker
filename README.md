@@ -9,11 +9,10 @@ ESPN Who Picked Whom: https://fantasy.espn.com/tournament-challenge-bracket/2022
 More information on Contrarian Strategy can be found here (Note: This is for the 2017 Tournament):
 https://www.usatoday.com/story/sports/ncaab/tourney/2017/03/15/contrarian-ncaa-tournament-bracket-tips-march-madness-picks-betting/99214700/  
 
-Run the file in 3 steps :grinning: after cloning project to desired destination:  
+Run the file in 3 steps :grinning: after cloning project to desired destination (Windows):  
     1. Open a terminal in folder where project is cloned  
     2. Run `pip install -r March-Madness-Contrarian-Bracket-Picker/requirements.txt`  
-    3. Run `venv\Scripts\python bracket_picker.py`  
-Note: For Windows use '\' instead of '/'
+    3. Run `python March-Madness-Contrarian-Bracket-Picker/bracket_picker.py`  
 
 To change the number of value picks being shown for each round, open the `bracket_picker.py` file in a text editor and change the value of `NUMBER_OF_RANKINGS` to display the desired number of teams per round.  
     Ex. `NUMBER_OF_RANKINGS = 5` displays the top 5 value picks to advance for each respective round.
